@@ -334,6 +334,6 @@ button:active {
         height: 20px;
     }
     th,td{
-        transform: translateX(30px);
+        transform: translateX(60px);
     }
 }
