@@ -308,6 +308,7 @@ button:active {
     text-align: center;
     color: aqua;
 }
+
 @media screen and (max-width: 700px) {
     .app h1{
         font-size:20px ;
@@ -335,5 +336,8 @@ button:active {
     }
     th,td{
         transform: translateX(50px);
+    }
+    .buy-button button{
+        transform: translateX(-30px);
     }
 }
