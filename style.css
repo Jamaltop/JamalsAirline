@@ -308,3 +308,30 @@ button:active {
     text-align: center;
     color: aqua;
 }
+@media screen and (max-width: 700px) {
+    .app h1{
+        font-size:20px ;
+    }
+    .app img{
+        width: 200px;
+    }
+    
+    th,td{
+        font-size: 10px;
+        padding: 3px 5px;
+        width: 50px;
+    }
+    table{
+        width: 450px;
+      
+    }
+    button{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .buy-button{
+        width: 20px;
+        height: 20px;
+    }
+    
+}
