@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Orbitron:wght@400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Doto", sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    background-image: linear-gradient(120deg, blue, orange, purple);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textAnimation 5s ease-in-out infinite, verh 2s 1 ease-in-out;
+    transform: translateY(20px);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes textAnimation {
+    0% { background-image: linear-gradient(120deg, blue, orange, purple); }
+    25% { background-image: linear-gradient(120deg, red, yellow, pink); }
+    50% { background-image: linear-gradient(120deg, green, blue, purple); }
+    75% { background-image: linear-gradient(120deg, orange, red, yellow); }
+    100% { background-image: linear-gradient(120deg, blue, orange, purple); }
+}
+
+.app {
+    width: 90vw;
+    max-width: 1300px;
+    height: auto;
+    display: flex;
+    background-color: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: appBackground 3s 1 alternate;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes appBackground {
+    0% { opacity: 0.1; }
+    100% { background-color: #0e0d0d; }
+}
+
+table {
+    margin-top: 50px;
+    color: white;
+    font-family: "Orbitron", serif;
+    border-top: 10px solid orange;
+    border-radius: 15px;
+    box-shadow: 0px -20px 50px blue, 0 4px 30px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    animation: tableAnimation 1.5s ease-out;
+    transform: translateY(-30px);
+    width: 100%;
+    table-layout: fixed;
+}
+
+@keyframes tableAnimation {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(-30px); opacity: 1; }
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+td {
+    color: aqua;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td:hover {
+    background-color: #222;
+    color: #f5a623;
+    box-shadow: inset 0 0 15px #f5a623;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: aqua;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: buttonAnimation 2s ease-out;
+}
+
+@keyframes buttonAnimation {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(1.1);
+    border: 3px solid gold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+button:active {
+    transform: scale(0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 4px 10px;
+}
+
+.id {
+    color: white;
+    font-weight: bold;
+}
+
+.c {
+    color: #4CAF50;
+}
+
+.b {
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(120deg, green, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+.a {
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(120deg, white, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+.d {
+    color: transparent;
+    background-image: linear-gradient(120deg, blue, brown);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+.e {
+    color: transparent;
+    background-image: linear-gradient(120deg, green, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+.j {
+    color: transparent;
+    background-image: linear-gradient(120deg, red, brown, gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+@keyframes countryTextAnimation {
+    0% { background-image: linear-gradient(120deg, blue, red, yellow); }
+    25% { background-image: linear-gradient(120deg, green, blue, purple); }
+    50% { background-image: linear-gradient(120deg, orange, pink, yellow); }
+    75% { background-image: linear-gradient(120deg, purple, pink, red); }
+    100% { background-image: linear-gradient(120deg, blue, green, yellow); }
+}
+
+.a:hover,
+.b:hover,
+.d:hover,
+.e:hover,
+.j:hover {
+    box-shadow: inset 0px 0px 20px orange;
+    color: transparent;
+    background-clip: text;
+    animation: countryTextAnimation 5s infinite alternate;
+}
+
+.buy-button {
+    background-image: linear-gradient(90deg, green, aqua);
+    border: 2px solid black;
+    color: white;
+    padding: 5px 6px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: back 0.8s alternate infinite;
+}
+
+.buy-button:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(45deg, #d4a5a5, #ff6f61);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.buy-button:active {
+    transform: scale(0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes back{
+    0% { background-image: linear-gradient(120deg, gold, aqua); }
+    100% { background-image: linear-gradient(120deg, blue, brown); }
+}
+
+.id:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.c:hover {
+    color: #4CAF50;
+}
+
+@keyframes verh {
+    0% {
+        transform: translateY(-px);
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#payment-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+}
+
+#payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: white;
+}
+
+#payment-form button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+#payment-form button:hover {
+    background-color: #45a049;
+}
+
+#payment-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: aqua;
+}
